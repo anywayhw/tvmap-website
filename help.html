@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TVMap 帮助 — 使用教程与高德 API Key 申请</title>
+<meta name="description" content="TVMap 电视地图使用帮助：遥控器操作方法、设置说明、高德地图 API Key 申请教程。">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="icon" href="assets/icon.png">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="TVMap">TVMap 电视地图</a>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="download.html">下载</a>
+      <a href="help.html" class="active">帮助</a>
+      <a href="about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ 帮助 ============ -->
+<section class="page-hero">
+  <div class="container">
+    <p class="crumb">首页 / 帮助</p>
+    <h1>使用帮助</h1>
+  </div>
+</section>
+
+<section class="section" style="padding-top:36px">
+  <div class="container help-layout">
+
+    <!-- ============ 左侧内容 ============ -->
+    <div>
+      <div class="help-card">
+        <h2><span class="h-no">1</span>遥控器操作方法</h2>
+        <p>TVMap 的全部功能都可以通过电视遥控器完成，无需鼠标和键盘。</p>
+        <table class="ops">
+          <tr><th>功能</th><th>按键</th></tr>
+          <tr><td>移动地图</td><td><code>方向键</code> 上下左右</td></tr>
+          <tr><td>切换缩放模式</td><td><code>确认键</code>（开启后 <code>上</code> 放大、<code>下</code> 缩小）</td></tr>
+          <tr><td>打开设置</td><td><code>菜单键</code></td></tr>
+          <tr><td>退出应用</td><td><code>返回键</code>（需二次确认，防止误退）</td></tr>
+        </table>
+      </div>
+
+      <div class="help-card">
+        <h2><span class="h-no">2</span>设置说明</h2>
+        <p>打开应用后按遥控器「菜单键」进入设置，可配置以下项目：</p>
+        <ul>
+          <li><strong>地图类型</strong>：普通地图 / 卫星地图 / 夜景地图（左右键切换）</li>
+          <li><strong>实时路况</strong>：开关，控制路况图层显示（左右键切换）</li>
+          <li><strong>显示文字</strong>：开关，控制 POI 文字标注显示</li>
+          <li><strong>API Key</strong>：高德地图开发者 Key（获取方法见下方教程）</li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h2><span class="h-no">3</span>高德地图 API Key 申请方法</h2>
+        <p>TVMap 使用高德地图 Android SDK，需要填入你免费申请的高德开放平台 Key 才能加载地图。申请步骤：</p>
+        <ol>
+          <li>打开<a href="https://console.amap.com/" target="_blank" rel="noopener">高德开放平台</a>，注册并登录开发者账号。</li>
+          <li>进入「应用管理」→「我的应用」，点击「创建新应用」，应用名称填写 <code>TVMap</code>。</li>
+          <li>在应用下点击「添加 Key」，Key 名称填写 <code>TVMap</code>，服务平台选择「Android 平台」。</li>
+          <li>配置 Android 安全码：
+            <ul>
+              <li>发布版安全码（SHA1）与调试版安全码（SHA1）：填写相同的值（具体数值可在应用内设置页的教程中查看）。</li>
+              <li>PackageName（包名）：填写 <code>com.tvmap.app</code>。</li>
+            </ul>
+          </li>
+          <li>提交后复制生成的 Key，在电视上打开 设置 → API Key，输入并保存。</li>
+        </ol>
+        <p style="margin-top:12px">应用设置页内附有图文教程，可对照操作。申请 Key 完全免费。</p>
+      </div>
+    </div>
+
+    <!-- ============ 侧边栏 ============ -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <img src="assets/remote.jpg" alt="通用电视遥控器示意图">
+        <p class="cap">通用电视遥控器 · 方向键 + 确认 / 菜单 / 返回</p>
+      </div>
+      <div class="side-tip">
+        <strong>小贴士</strong>
+        缩放模式下按「上」放大地图、按「下」缩小地图，再按一次确认键即可回到移动模式。多练习几次，操作会非常顺手。
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="f-brand"><img src="assets/icon.png" alt="">TVMap 电视地图</div>
+    <div>© 2026 TVMap · <a href="about.html">关于</a> · <a href="help.html">帮助</a></div>
+    <div>作者 Will Huang · AnywayStudio</div>
+  </div>
+</footer>
+
+</body>
+</html>
